@@ -1,13 +1,203 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+
+
+.App {
+  padding: 0%;
+  font-family: "Quicksand";
+  text-align: center;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: #62EBEC;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.navbar {
+  font-size: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: right; 
+  max-width: 1500px;
+  margin: 0 auto;
+
+}
+
+
+.navbar a{
+ font-weight: bold;
+ color: white;
+ margin-left: 16px;
+ text-decoration: none;
+ padding: 6px;
+ height: 50px;
+   
+ }
+ 
+.navbar a:hover{
+  color: black;
+ }
+ 
+ /* Home.js */
+ .home{
+ 
+   text-shadow:0.4px 0.4px 0 #444;
+   color: white;
+   text-align: center;
+   margin-top: 50px;
+   
+ }
+ 
+ 
+ /* Cloud Icon */
+ .fa-cloud {
+   font-size: 70px;
+   float: left;
+   margin-left: 0.5em;
+ 
+   color: white;
+
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.cloudy {
+  max-width: 100%;
+  display: block;
+
+}
+
+
+.button-container {
+  color: white;
+  font-size: 27px ;
+  display: fixed;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.bookbutton {
+  color:white;
+  transition-duration: 0.4s;
+  font-size:100%;
+  padding: 2.5px;
+  border-radius: 5px;
+  border: 2px solid white;
+
+ /* To remove underline */
+  text-decoration: none;
+}
+
+.bookbutton:hover{
+  background-color: white;
+   color:black;
+}
+
+/*Text slide in */
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+.slide-in-welcome {
+  animation: slideIn 3s forwards;
+}
+
+/*AboutUs.js style*/
+
+.aboutus {
+  margin: 1em;
+}
+
+.aboutus h1 {
+  background-color: white;
+  color:black;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 1.5em; 
+}
+
+.aboutus p {
+  text-align: left;
+  color: black;
+  font-size: 19px;
+  margin-bottom: 1em;
+  line-height: 1.5;
+  margin-left: 0.5em;
+}
+
+.RegistrationForm {
+  text-align: center;
+  padding: 5%;
+}
+
+/* BookNow.js */
+
+.booknow {
+  margin:1em;
+  
+}
+
+.booknow h1{
+  background-color: white;
+  color:black;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 1.5em; 
+}
+
+footer {
+  color: black;
+  font-size: 70%;
+  background-color: white;
+  text-align: center;
+  margin: 0;
+  padding: 5px; 
+  position: absolute;
+  width: 100%;
+
+}
+
+.icon-container {
+  margin-top: 20em;
+  display: flex; /* places the icons next to each other */
+  justify-content: center;
+  align-items: center;
+  gap: 100px; 
+  margin-top: 4em;
+}
+
+.icon {
+  color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+
+.RegistrationForm {
+  font-size: 30px;
+  border-radius: 25px; /*Makes shape of border round*/
+  padding: 10px;
+  width: 30%;
+  margin: 0 auto;/*Keep the form in the middle*/
+  background-color: white;
 }
